@@ -1,0 +1,15 @@
+{
+    "name": "",
+    "main": "index.html",
+    "js-flags": "--expose-gc",
+	 "chromium-args" : "--in-process-gpu --ignore-gpu-blacklist --force-gpu-mem-available-mb=10000 --force-gpu-rasterization --enable-native-gpu-memory-buffers --enable-gpu-memory-buffer-compositor-resources",
+   
+"_comment" : "disable-gpu-vsync --limit-fps=60 -disable-devtools",
+    "window": {
+        "title": "",
+        "toolbar": false,
+        "width": 816,
+        "height": 624,
+        "icon": "icon/icon.png"
+    }
+}
