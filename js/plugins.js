@@ -9,7 +9,7 @@ var $plugins =
 {"name":"DTextPicture","status":true,"description":"動的文字列ピクチャ生成プラグイン","parameters":{}},
 {"name":"TMNamePop","status":true,"description":"イベントの頭上に文字列を表示する機能を追加します。","parameters":{"backOpacity":"96","fontSize":"20","fontOutlineWidth":"4","fontOutlineColor":"rgba(0, 0, 0, 0.5)","width":"240","useRoundRect":"0","roundRectRadius":"6"}},
 {"name":"QuickMove","status":true,"description":"歩行とジャンプを軽快に(2000風に)します。","parameters":{}},
-{"name":"OnlineAvatar","status":true,"description":"Firebaseを使ってプレイヤーをオンライン同期します。","parameters":{"apiKey":"AIzaSyBp_qOC9_30KXP5j9UWk32ZJ0ikOnrZ-84","authDomain":"rpg-maker-mv-online.firebaseapp.com","databaseURL":"https://rpg-maker-mv-online-default-rtdb.firebaseio.com","avatarEvent":"1","syncSwitchStart":"11","syncSwitchEnd":"20","syncVariableStart":"11","syncVariableEnd":"20"}},
+{"name":"OnlineAvatar","status":false,"description":"Firebaseを使ってプレイヤーをオンライン同期します。","parameters":{"apiKey":"AIzaSyBp_qOC9_30KXP5j9UWk32ZJ0ikOnrZ-84","authDomain":"rpg-maker-mv-online.firebaseapp.com","databaseURL":"https://rpg-maker-mv-online-default-rtdb.firebaseio.com","avatarEvent":"1","syncSwitchStart":"11","syncSwitchEnd":"20","syncVariableStart":"11","syncVariableEnd":"20"}},
 {"name":"DataCacheBlocker","status":true,"description":"キャッシュを阻止します。（dataフォルダのみ）","parameters":{}},
 {"name":"SymbolReplacer","status":true,"description":"ファイル名の!と$を別の語に置き換えます。","parameters":{"method":"restore","exclamationmark":"Exc_","dollar":"Dol_"}},
 {"name":"MakeScreenCapture","status":true,"description":"画面キャプチャ管理プラグイン","parameters":{"PNGキャプチャキー":"F6","JPEGキャプチャキー":"F7","WEBPキャプチャキー":"F10","ファイル名":"image","出力場所":"/captures","保存形式":"png","連番桁数":"2","タイムスタンプ":"ON","署名":"","署名サイズ":"22","署名画像":"","実行間隔":"0","効果音":"Flash1"}},
