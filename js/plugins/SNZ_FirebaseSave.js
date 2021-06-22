@@ -560,6 +560,7 @@ FirebaseSave : 上書きセーブを実行します。
     } else {
       if (!FirebaseSave._app) {
         FirebaseSave._app = firebase.initializeApp(param.firebaseconfig);
+		export default FirebaseSave._app;
       }
       firebase.auth().onAuthStateChanged(function(user) {
         FirebaseSave._readytopushstart = true;
