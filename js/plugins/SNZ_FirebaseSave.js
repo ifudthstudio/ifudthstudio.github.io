@@ -558,13 +558,13 @@ FirebaseSave : 上書きセーブを実行します。
     if (this.isPlaytest()) {
       FirebaseSave._readytopushstart = true;
     } else {
-console.log('4')
+console.log('5')
 	  
 	  if (!firebase.apps.length) {
   FirebaseSave._app = firebase.initializeApp({});
 }else {
 //   firebase.app(); // if already initialized, use that one
-   
+   firebase.initializeApp({}, 'your app name here')
     FirebaseSave._app = firebase.initializeApp(param.firebaseconfig);
 }
 	  
