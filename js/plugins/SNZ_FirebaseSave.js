@@ -555,12 +555,15 @@ FirebaseSave : 上書きセーブを実行します。
   var _Game_Temp_prototype_initialize = Game_Temp.prototype.initialize;
   Game_Temp.prototype.initialize = function() {
     _Game_Temp_prototype_initialize.call(this);
+	import firebase from ‘firebase’;
     if (this.isPlaytest()) {
       FirebaseSave._readytopushstart = true;
     } else {
       if (!FirebaseSave._app) {
+	
         FirebaseSave._app = firebase.initializeApp(param.firebaseconfig);
 		export default FirebaseSave._app;
+
       }
       firebase.auth().onAuthStateChanged(function(user) {
         FirebaseSave._readytopushstart = true;
