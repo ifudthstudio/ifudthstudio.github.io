@@ -565,7 +565,7 @@ FirebaseSave : 上書きセーブを実行します。
 }else {
 //   firebase.app(); // if already initialized, use that one
    
-    FirebaseSave._app = firebase.app(param.firebaseconfig);
+    FirebaseSave._app = firebase.initializeApp(param.firebaseconfig);
 }
 	  
       firebase.auth().onAuthStateChanged(function(user) {
