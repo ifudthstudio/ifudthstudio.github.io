@@ -134,14 +134,14 @@ function Game_Avatar() {
 		ps['syncVariableEnd'] = +ps['syncVariableEnd'];
 
 		try {
-			firebase.initializeApp({apiKey: ps['apiKey'], authDomain: ps['authDomain'], databaseURL: ps['databaseURL']});
+			//firebase.initializeApp({apiKey: ps['apiKey'], authDomain: ps['authDomain'], databaseURL: ps['databaseURL']});
 		} catch(e) {
 			throw new Error('apiKeyが正しく設定されていません。ご確認ください。');
 		}
 
 		this.auth();
 	};
-
+//007
 	//firebaseアプリにアクセスして匿名サインイン
 	//パスワード認証とかTwitter連携認証でログインさせたい場合はこのメソッドを改造しましょう
 	OnlineManager.auth = function() {
